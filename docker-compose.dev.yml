@@ -61,7 +61,7 @@ services:
       dockerfile: docker/echo-server.Dockerfile
     hostname: laravel-echo-server
     ports:
-      - "6001:6001"
+      - "8443:8443"
     volumes:
       - ./laravel-echo-server.dev.json:/usr/src/app/laravel-echo-server.json
       - ./docker/echo-server.sh:/usr/src/app/echo-server.sh
